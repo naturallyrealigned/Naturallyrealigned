@@ -184,7 +184,9 @@ h1{font-size:clamp(53px,11vw,68px);margin:12px 0}
 .quote span{color:#a8cfc1!important}
 @media(min-width:721px){.about-inner{display:flex;justify-content:flex-start}.about-inner>div{width:min(100%,520px);text-align:left}.about-inner p{margin-left:0;margin-right:auto}}
 /* About text stays left aligned across desktop and mobile. */
-.about-inner h2,.about-inner p{text-align:left!important}
+.about-inner{max-width:1080px!important;width:min(100% - 38px,1080px)!important;margin-left:auto!important;margin-right:auto!important;justify-content:flex-start!important;text-align:left!important}
+.about-inner>div{margin-left:0!important;margin-right:auto!important;text-align:left!important}
+.about-inner .kicker,.about-inner h2,.about-inner p{text-align:left!important}
 .about{background:#f4f0e7!important}
 /* Desktop Feinschliff */
 .brand{display:inline-flex;align-items:center;gap:13px}.brand img{width:58px;height:58px;border-radius:50%;object-fit:cover;flex-shrink:0}
