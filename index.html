@@ -188,6 +188,11 @@ h1{font-size:clamp(53px,11vw,68px);margin:12px 0}
 .about-inner>div{margin-left:0!important;margin-right:auto!important;text-align:left!important}
 .about-inner .kicker,.about-inner h2,.about-inner p{text-align:left!important}
 .about{background:#f4f0e7!important}
+/* About: align content to the same left gutter as the rest of the page */
+.about .about-inner{display:block!important;width:min(100% - 38px,1080px)!important;max-width:1080px!important;margin:0 auto!important;padding:0!important;text-align:left!important}
+.about .about-inner>div{display:block!important;width:100%!important;max-width:520px!important;margin:0!important;padding:0!important;text-align:left!important}
+.about .about-inner .kicker,.about .about-inner h2,.about .about-inner p{text-align:left!important;margin-left:0!important;margin-right:0!important}
+@media(max-width:720px){.about .about-inner{width:min(100% - 36px,560px)!important}}
 /* Desktop Feinschliff */
 .brand{display:inline-flex;align-items:center;gap:13px}.brand img{width:58px;height:58px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .section-head{display:block}.section-head .small-note{max-width:650px;margin:12px 0 0;color:#355257;font-size:13px}
