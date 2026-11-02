@@ -206,6 +206,13 @@ h1{font-size:clamp(53px,11vw,68px);margin:12px 0}
 .about>.wrap.about-inner>div{display:block!important;width:100%!important;max-width:520px!important;margin:0!important;padding:0!important;text-align:left!important}
 .about>.wrap.about-inner .kicker,.about>.wrap.about-inner h2,.about>.wrap.about-inner p{text-align:left!important;margin-left:0!important;margin-right:0!important}
 @media(max-width:720px){.about>.wrap.about-inner{width:min(100% - 36px,560px)!important}}
+
+/* Equal compact cards; status labels sit on the right without adding height. */
+.cards{grid-auto-rows:1fr}
+.cards>.feature .num{padding-right:135px}
+.cards>.feature .soon{position:absolute;top:17px;right:20px;margin-top:0}
+@media(min-width:721px){.cards{grid-template-rows:repeat(2,minmax(135px,1fr))}}
+@media(max-width:720px){.cards>.feature .soon{top:15px;right:18px}}
 </style>
 </head>
 <body>
