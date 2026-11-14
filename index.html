@@ -278,6 +278,14 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;mix-blend-mod
 
 /* 2026-11-14: lift the desktop wave clear of the following text. */
 @media(min-width:721px){.hero-wave{top:calc(50% + 130px)}}
+
+/* 2026-11-14: keep the desktop wave wholly inside the hero at every width. */
+@media(min-width:721px){
+ @keyframes desktopHeroFade{from{opacity:0}to{opacity:1}}
+ .hero{isolation:isolate}
+ .hero-copy{position:static;isolation:auto;transform:none!important;animation:desktopHeroFade .85s both!important}
+ .hero-wave{left:auto;right:0;top:auto;bottom:0}
+}
 </style>
 </head>
 <body>
