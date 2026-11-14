@@ -307,6 +307,12 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;mix-blend-mod
  .hero-title-row .hero-wave{position:absolute!important;width:175px!important;right:0!important;left:auto!important;top:28px!important;bottom:auto!important}
 }
 @media(max-width:359px){.hero-title-row .hero-wave{width:145px!important;top:24px!important}}
+
+/* Desktop study only: wave beside the title, like the approved mobile layout. */
+@media(min-width:721px){
+ .hero-title-row{display:block;position:relative}
+ .hero-title-row .hero-wave{position:absolute;left:auto;right:0;top:auto;bottom:8px;width:56%;height:auto;z-index:auto}
+}
 </style>
 </head>
 <body>
